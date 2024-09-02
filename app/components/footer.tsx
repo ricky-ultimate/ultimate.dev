@@ -53,9 +53,6 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <section className="text-grey-100 mt-8">
-        <h6 className="text-sm">Ricky's (リッキー) creation - {new Date().getFullYear()}</h6>
-      </section>
     </footer>
   )
 }
