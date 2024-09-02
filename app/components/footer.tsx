@@ -53,9 +53,9 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MIT Licensed
-      </p>
+      <section className="text-grey-100 mt-8">
+        <h6 className="text-sm">Ricky's (リッキー) creation - {new Date().getFullYear()}</h6>
+      </section>
     </footer>
   )
 }
