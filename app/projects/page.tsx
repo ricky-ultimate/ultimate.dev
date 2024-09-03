@@ -13,6 +13,8 @@ interface Repo {
 const reposToDisplay = [
   'stemdb',
   'courseflow',
+  'rust-matrix-operations',
+  'rust-rsa-encryption',
 ];
 
 const Projects = () => {
