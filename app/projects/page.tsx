@@ -35,6 +35,7 @@ const Projects = () => {
   return (
     <section className="prose">
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">My Projects</h1>
+      <p className="text-lg mb-6">Here are some of my notable projects:</p>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {repos.map((repo) => (
           <div key={repo.name} className="p-4 border rounded-lg shadow">
