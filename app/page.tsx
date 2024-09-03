@@ -7,7 +7,10 @@ export default function Page() {
         My universe!
       </h1>
       <p className="mb-4">
-        {`Lets keep it simple: I'm a human, this is my universe`}
+        {`Hi there! I’m Ricky, a 3rd-year Computer Science student and a passionate developer with a love for creating innovative web and desktop applications. Whether you’re here to check out my projects, learn more about my journey, or just share a love for tech, cryptography, psychology, and manga, you’re in the right place.`}
+      </p>
+      <p>
+        {`Dive in, explore my work, and let’s connect!`}
       </p>
       <div className="my-8">
         <BlogPosts />
