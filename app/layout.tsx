@@ -9,7 +9,7 @@ import Footer from './components/footer';
 import { baseUrl } from './sitemap';
 
 export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
+  metadataBase: new URL(`${baseUrl}`),
   title: {
     default: 'リッキー Ricky',
     template: '%s | リッキー Ricky',
@@ -18,10 +18,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'リッキー Ricky',
     description: "Ricky's mini website",
-    url: baseUrl,
+    url: `${baseUrl}`,
     siteName: 'リッキー Ricky',
     locale: 'en_US',
     type: 'website',
+    images: [
+        {
+          url: `${baseUrl}/og-img.png`,
+          width: 450,
+          height: 450,
+        },
+      ],
   },
   robots: {
     index: true,
