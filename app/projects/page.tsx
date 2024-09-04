@@ -26,7 +26,7 @@ const Projects = () => {
           name: repo.name,
           description: repo.description || 'No description available',
           stargazers_count: repo.stargazers_count,
-          forks_count: repo.forks_count,
+          forks_count: repo.forks_count || 0,  // Set default value to 0 if undefined
         };
       });
       setRepoDetails(repoDetailsMap);
@@ -53,7 +53,7 @@ const Projects = () => {
             <div className="text-sm text-neutral-600 dark:text-neutral-400">
               <span>{repo.language}</span> •
               <span>⭐ {repoDetails[repo.name]?.stargazers_count || 'Loading stars...'}</span> •
-              <span>🍴 {repoDetails[repo.name]?.forks_count || 'Loading forks...'}</span>
+              <span>🍴 {repoDetails[repo.name]?.forks_count > 0 ? repoDetails[repo.name]?.forks_count : 'No forks'}</span>
             </div>
           </div>
         ))}
