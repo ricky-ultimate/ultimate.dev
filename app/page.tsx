@@ -32,7 +32,7 @@ export default function Page() {
         <p className="text-lg flex items-center">
           <FaDiscord className="mr-2" />
           Or reach out on Discord at{' '}
-          <span className="text-blue-400 dark:text-blue-300 font-medium ml-1">rickyultimate</span>
+          <span className="text-blue-400 dark:text-blue-300 font-medium ml-1">@rickyultimate</span>
         </p>
       </section>
     </section>
