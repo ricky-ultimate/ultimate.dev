@@ -9,11 +9,11 @@ export default function Page() {
         My universe!
       </h1>
       <p className="mb-4">
-        Hi there! I’m Ricky, a 3rd-year Computer Science student and a
+        {`Hi there! I’m Ricky, a 3rd-year Computer Science student and a
         passionate developer with a love for creating innovative web and
         desktop applications. Whether you’re here to check out my projects, learn
         more about my journey, or just share a love for tech, you’re in the right
-        place.
+        place.`}
       </p>
       <p>Dive in, explore my work, and let’s connect!</p>
 
