@@ -9,9 +9,13 @@ export default function Page() {
         My universe!
       </h1>
       <p className="mb-4">
-        {`Hi there! I’m Ricky, a 3rd-year Computer Science student and a passionate developer with a love for creating innovative web and desktop applications. Whether you’re here to check out my projects, learn more about my journey, or just share a love for tech, you’re in the right place.`}
+        Hi there! I’m Ricky, a 3rd-year Computer Science student and a
+        passionate developer with a love for creating innovative web and
+        desktop applications. Whether you’re here to check out my projects, learn
+        more about my journey, or just share a love for tech, you’re in the right
+        place.
       </p>
-      <p>{`Dive in, explore my work, and let’s connect!`}</p>
+      <p>Dive in, explore my work, and let’s connect!</p>
 
       <div className="my-8">
         <BlogPosts />
@@ -23,12 +27,12 @@ export default function Page() {
         <p className="text-lg mb-4 flex items-center">
           <AiOutlineMail className="mr-2" />
           Just email me at{' '}
-            rickyultimate.dev@gmail.com
+          <span className="text-blue-400 dark:text-blue-300 font-medium ml-1">rickyultimate.dev@gmail.com</span>
         </p>
         <p className="text-lg flex items-center">
           <FaDiscord className="mr-2" />
           Or reach out on Discord at{' '}
-          <span className="font-medium ml-1">rickyultimate</span>
+          <span className="text-blue-400 dark:text-blue-300 font-medium ml-1">rickyultimate</span>
         </p>
       </section>
     </section>
