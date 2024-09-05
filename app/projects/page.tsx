@@ -1,7 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { reposData } from '../../data/reposData';
-import { AiOutlineStar, AiOutlineFork } from 'react-icons/ai'; // Neutral icons
+import { AiOutlineStar, AiOutlineFork } from 'react-icons/ai';  // Neutral icons
 
 interface Repo {
   name: string;
@@ -43,18 +43,21 @@ const Projects = () => {
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {reposData.map((repo) => (
           <div key={repo.name} className="p-4 border rounded-lg shadow flex flex-col justify-between">
-            {/* Name + Description */}
-            <div className="flex flex-col mb-4">
-              <h2 className="font-semibold text-xl">
-                <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
-                  {repo.name}
-                </a>
-              </h2>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">
-                {repoDetails[repo.name]?.description || 'Loading description...'}
-              </p>
+            {/* Project Name + Description */}
+            <div className="flex justify-between items-start mb-3">
+              <div className="flex flex-col">
+                <h2 className="font-semibold text-xl">
+                  <a href={repo.html_url} target="_blank" rel="noopener noreferrer">
+                    {repo.name}
+                  </a>
+                </h2>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400 mt-2">
+                  {repoDetails[repo.name]?.description || 'Loading description...'}
+                </p>
+              </div>
             </div>
-            {/* Language + Stars + Forks */}
+
+            {/* Language + Stats (Stars & Forks) */}
             <div className="flex justify-between items-center text-sm text-neutral-600 dark:text-neutral-400">
               <span>{repo.language}</span>
               <div className="flex space-x-4 items-center">
