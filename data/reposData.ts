@@ -7,7 +7,7 @@ export const reposData = [
     {
       name: 'courseflow',
       html_url: 'https://github.com/ricky-ultimate/courseflow',
-      language: 'Python',
+      language: 'TypeScript',
     },
     {
       name: 'rust-matrix-operations',
